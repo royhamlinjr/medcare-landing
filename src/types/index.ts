@@ -21,3 +21,8 @@ export interface Consultant {
   bio: string;
   avatar: string;
 }
+
+export interface FooterLinkColumn {
+  title: string;
+  links: string[];
+}

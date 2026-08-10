@@ -3,6 +3,8 @@ import Hero from "./components/Hero/Hero";
 import TrustedCompanies from "./components/TrustedCompanies/TrustedCompanies";
 import Benefits from "./components/Benefits/Benefits";
 import Consultants from "./components/Consultants/Consultants";
+import CTA from "./components/CTA/CTA";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <TrustedCompanies />
       <Benefits />
       <Consultants />
+      <CTA />
+      <Footer />
     </div>
   );
 }
