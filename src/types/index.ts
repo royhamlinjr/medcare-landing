@@ -8,3 +8,8 @@ export interface Avatar {
   imageUrl: string;
   alt: string;
 }
+
+export interface Company {
+  name: string;
+  logo: string;
+}
