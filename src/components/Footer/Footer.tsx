@@ -55,22 +55,21 @@ const Footer = () => {
             </p>
 
             <form
-              onSubmit={(e) => e.preventDefault()}
-              className="flex items-center bg-white/5 border border-white/10 rounded-full pl-4 pr-1 py-1"
+            onSubmit={(e) => e.preventDefault()}
+            className="flex items-center bg-white/5 border border-white/10 rounded-full pl-3 pr-1 py-1 gap-1"
             >
-              <input
+            <input
                 type="email"
-                placeholder="Enter your email address..."
-                className="bg-transparent text-sm text-white placeholder:text-white/40 outline-none flex-1 min-w-0"
+                placeholder="Enter your email..."
+                className="bg-transparent text-xs sm:text-sm text-white placeholder:text-white/40 outline-none flex-1 min-w-0"
                 aria-label="Email address"
-              />
-
-              <button
+            />
+            <button
                 type="submit"
-                className="bg-gradient-to-r from-primary to-purple-400 hover:opacity-90 transition-opacity text-xs font-medium px-4 py-2 rounded-full whitespace-nowrap"
-              >
-                Send a Message
-              </button>
+                className="bg-gradient-to-r from-primary to-purple-400 hover:opacity-90 transition-opacity text-xs font-medium px-3 sm:px-4 py-2 rounded-full whitespace-nowrap"
+            >
+                Send
+            </button>
             </form>
           </div>
 

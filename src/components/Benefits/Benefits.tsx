@@ -2,7 +2,7 @@ import Button from "../ui/Button";
 
 const Benefits = () => {
   return (
-    <section id="services" className="max-w-7xl mx-auto px-6 py-20">
+    <section id="services" className="max-w-7xl mx-auto px-6 py-14 md:py-20">
       {/* Section heading */}
       <div className="text-center mb-12">
         <span className="text-primary text-sm font-bold tracking-wide uppercase">

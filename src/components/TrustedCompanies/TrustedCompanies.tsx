@@ -2,7 +2,7 @@ import { trustedCompanies } from "../../constants/companies";
 
 const TrustedCompanies = () => {
   return (
-    <section id="about" className="max-w-7xl mx-auto px-6 py-20 text-center">
+    <section id="about" className="max-w-7xl mx-auto px-6 py-14 md:py-20 text-center">
       <span className="text-primary text-sm font-bold tracking-wide uppercase">
         Trusted By
       </span>

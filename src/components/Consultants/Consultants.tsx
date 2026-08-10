@@ -4,7 +4,7 @@ import { medicalFeatures } from "../../constants/medicalFeatures";
 
 const Consultants = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-20">
+    <section className="max-w-7xl mx-auto px-6 py-14 md:py-20">
       {/* Heading */}
       <h2 className="text-3xl md:text-5xl font-extrabold text-dark text-center mb-12 max-w-2xl mx-auto leading-tight">
         Collaborate with our best consultant by online
@@ -63,7 +63,7 @@ const Consultants = () => {
             className="w-full h-full object-cover"
           />
 
-          <div className="absolute top-6 left-6 bg-white rounded-xl shadow-lg p-4 max-w-[220px]">
+          <div className="absolute top-4 left-4 right-4 sm:right-auto bg-white rounded-xl shadow-lg p-4 max-w-[220px]">
             <div className="flex items-center gap-2 mb-2">
               <img
                 src="https://i.pravatar.cc/60?img=14"

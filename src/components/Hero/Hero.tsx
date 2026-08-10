@@ -14,7 +14,7 @@ const Hero = () => {
             Get flat 20% off on first check-up
           </span>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark leading-tight">
             Get Premium medical care for your best health
           </h1>
 
@@ -48,7 +48,7 @@ const Hero = () => {
         </div>
 
         {/* Right: Doctor image */}
-        <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-purple-100 to-purple-200 min-h-[420px]">
+        <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-purple-100 to-purple-200 min-h-[320px] md:min-h-[420px]">
           <img
             src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=800&auto=format&fit=crop&q=60"
             alt="Doctor ready for consultation"
