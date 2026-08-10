@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import TrustedCompanies from "./components/TrustedCompanies/TrustedCompanies";
+import Benefits from "./components/Benefits/Benefits";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <TrustedCompanies />
+      <Benefits />
     </div>
   );
 }
