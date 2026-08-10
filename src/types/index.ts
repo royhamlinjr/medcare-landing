@@ -13,3 +13,11 @@ export interface Company {
   name: string;
   logo: string;
 }
+
+export interface Consultant {
+  id: string;
+  name: string;
+  role: string;
+  bio: string;
+  avatar: string;
+}
