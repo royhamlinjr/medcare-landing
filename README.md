@@ -10,7 +10,7 @@ A pixel-perfect, fully responsive landing page for a medical care platform, buil
 - **Vite** (build tool)
 
 ## 📁 Project Structure
-
+```
 src/
 ├── assets/            # Image assets (logo)
 ├── components/
@@ -27,7 +27,7 @@ src/
 ├── App.tsx
 ├── main.tsx
 └── index.css
-
+```
 ## 🛠️ Setup Instructions
 
 1. Clone the repository:
@@ -90,4 +90,4 @@ https://medcare-landing-ten.vercel.app/
 
 ## 👤 Author
 
-[Roy Hamlin A]
+Roy Hamlin A
