@@ -16,8 +16,8 @@ const sphereCluster = [
 
 const CTA = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 pt-10">
-      <div className="relative bg-gradient-to-br from-primary to-purple-500 rounded-3xl overflow-hidden px-6 py-16 md:py-20 text-center">
+    <section className="max-w-7xl mx-auto px-6 py-10">
+      <div className="relative bg-gradient-to-br from-primary to-purple-500 rounded-2xl overflow-hidden px-6 py-12 md:py-16 mx-2 md:mx-4 text-center">
         {/* Sphere cluster - top right */}
         <div className="absolute top-0 right-0 w-72 h-40 pointer-events-none hidden sm:block">
           {sphereCluster.map((sphere, index) => (
@@ -59,12 +59,12 @@ const CTA = () => {
             Bring your customer services the next level of excellence.
           </h2>
           <Button
-            variant="primary"
-            icon={<span>→</span>}
-            className="bg-white text-primary hover:bg-gray-100 mx-auto"
-          >
-            Make a schedule
-          </Button>
+              variant="dark"
+              icon={<span>→</span>}
+              className="mx-auto"
+            >
+              Make a schedule
+            </Button>
         </div>
       </div>
     </section>
