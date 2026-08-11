@@ -63,6 +63,8 @@ const Benefits = () => {
                 src="https://i.pravatar.cc/60?img=13"
                 alt="Dr. Thomas"
                 className="w-8 h-8 rounded-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
               <div>
                 <p className="text-sm font-semibold text-dark">Dr. Thomas</p>

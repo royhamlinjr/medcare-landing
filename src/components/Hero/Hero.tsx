@@ -50,9 +50,12 @@ const Hero = () => {
         {/* Right: Doctor image */}
         <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-purple-100 to-purple-200 min-h-[320px] md:min-h-[420px]">
           <img
-            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=800&auto=format&fit=crop&q=60"
+            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=500&auto=format&fit=crop&q=65"
             alt="Doctor ready for consultation"
             className="w-full h-full object-cover"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
           />
 
           {/* Calling card overlay */}
@@ -61,6 +64,8 @@ const Hero = () => {
               src="https://i.pravatar.cc/100?img=51"
               alt="Dr. James Smith"
               className="w-11 h-11 rounded-full object-cover"
+              loading="lazy"
+              decoding="async"
             />
             <div className="flex-1">
               <p className="text-sm font-semibold text-dark">Calling</p>

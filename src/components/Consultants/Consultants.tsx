@@ -12,28 +12,29 @@ const Consultants = () => {
 
       {/* Consultant cards */}
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-14">
-        {consultants.map((consultant) => (
-          <div
-            key={consultant.id}
-            className="border border-gray-100 rounded-2xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
+      {consultants.map((consultant) => (
+        <article
+          key={consultant.id}
+          className="border border-gray-100 rounded-2xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
+        >
+          <img
+            src={consultant.avatar}
+            alt={consultant.name}
+            className="w-14 h-14 rounded-full object-cover mb-4"
+          />
+          <h3 className="text-lg font-bold text-dark">{consultant.name}</h3>
+          <p className="text-sm text-gray-text mb-3">{consultant.role}</p>
+          <div className="w-8 h-0.5 bg-primary mb-3" />
+          <p className="text-sm text-gray-text mb-6">{consultant.bio}</p>
+          <button
+            aria-label={`View ${consultant.name}'s profile`}
+            className="w-10 h-10 rounded-full bg-primary hover:bg-primary-dark text-white flex items-center justify-center transition-colors"
           >
-            <img
-              src={consultant.avatar}
-              alt={consultant.name}
-              className="w-14 h-14 rounded-full object-cover mb-4"
-            />
-            <h3 className="text-lg font-bold text-dark">{consultant.name}</h3>
-            <p className="text-sm text-gray-text mb-3">{consultant.role}</p>
-            <div className="w-8 h-0.5 bg-primary mb-3" />
-            <p className="text-sm text-gray-text mb-6">{consultant.bio}</p>
-            <button
-              aria-label={`View ${consultant.name}'s profile`}
-              className="w-10 h-10 rounded-full bg-primary hover:bg-primary-dark text-white flex items-center justify-center transition-colors"
-            >
-              →
-            </button>
-          </div>
-        ))}
+            →
+          </button>
+        </article>
+      ))}
+        
       </div>
 
       {/* Description + CTA */}
@@ -58,9 +59,11 @@ const Consultants = () => {
         {/* Map card */}
         <div className="relative rounded-3xl overflow-hidden bg-gray-100 min-h-[360px]">
           <img
-            src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=900&auto=format&fit=crop&q=60"
+            src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=500&auto=format&fit=crop&q=65"
             alt="Map showing nearby doctors"
             className="w-full h-full object-cover"
+            loading="lazy"
+            decoding="async"
           />
 
           <div className="absolute top-4 left-4 right-4 sm:right-auto bg-white rounded-xl shadow-lg p-4 max-w-[220px]">
@@ -69,6 +72,8 @@ const Consultants = () => {
                 src="https://i.pravatar.cc/60?img=14"
                 alt="Dr. Miles"
                 className="w-9 h-9 rounded-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
               <div>
                 <p className="text-sm font-semibold text-dark">Dr. Miles</p>
