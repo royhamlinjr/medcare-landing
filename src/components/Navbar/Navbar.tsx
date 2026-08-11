@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { navLinks } from "../../constants/navLinks";
 import Button from "../ui/Button";
+import medicareLogo from "../../assets/medicare-logo.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,10 +11,16 @@ const Navbar = () => {
       <nav className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
         
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2">
-          <span className="text-2xl font-bold text-dark">M</span>
-          <span className="text-xl font-bold text-dark">Medcare</span>
-        </a>
+        <a href="#home" className="flex items-center gap-2">
+        <img
+          src={medicareLogo}
+          alt="Medicare logo"
+          width={36}
+          height={36}
+          className="w-9 h-9 object-contain"
+        />
+        <span className="text-lg font-bold text-dark">Medicare</span>
+      </a>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-dark">

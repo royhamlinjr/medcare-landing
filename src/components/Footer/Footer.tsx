@@ -100,7 +100,7 @@ const Footer = () => {
         <div className="flex flex-col-reverse sm:flex-row items-center justify-between gap-6 pt-6 border-t border-white/10">
 
           <p className="text-xs text-white/40 text-center sm:text-left">
-            © Medcare and it&apos;s diary, Accounting for a better future.
+            © Medicare and it&apos;s diary, Accounting for a better future.
           </p>
 
           <div className="flex items-center gap-4">

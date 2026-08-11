@@ -13,7 +13,7 @@ const TrustedCompanies = () => {
       </h2>
 
       <p className="text-gray-text max-w-xl mx-auto mb-12">
-        Brands everywhere use Medcare solutions to build awareness, engage
+        Brands everywhere use Medicare solutions to build awareness, engage
         better and grow their values.
       </p>
 
