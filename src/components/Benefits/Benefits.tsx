@@ -4,7 +4,7 @@ const Benefits = () => {
   return (
     <section id="services" className="max-w-7xl mx-auto px-6 py-14 md:py-20">
       {/* Section heading */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-10">
         <span className="text-primary text-sm font-bold tracking-wide uppercase">
           Features
         </span>
@@ -57,7 +57,7 @@ const Benefits = () => {
           </p>
 
           {/* Chat mockup */}
-          <div className="bg-white rounded-2xl p-4 shadow-sm">
+          <div className="bg-white rounded-2xl p-4 shadow-soft">
             <div className="flex items-center gap-2 mb-4 pb-3 border-b border-gray-100">
               <img
                 src="https://i.pravatar.cc/60?img=13"
@@ -100,7 +100,7 @@ const Benefits = () => {
 
         <div className="grid sm:grid-cols-[1fr_auto] gap-4">
           {/* Line chart card */}
-          <div className="bg-white rounded-2xl p-5 shadow-sm">
+          <div className="bg-white rounded-2xl p-5 shadow-soft">
             <div className="flex items-center justify-between mb-4">
               <p className="text-sm font-semibold text-dark">Appointment Overview</p>
               <span className="text-xs text-gray-text border border-gray-200 rounded-full px-3 py-1 flex items-center gap-1">
@@ -143,7 +143,7 @@ const Benefits = () => {
           </div>
 
           {/* Health score card */}
-          <div className="bg-white rounded-2xl p-5 shadow-sm w-full sm:w-40 flex flex-col">
+          <div className="bg-white rounded-2xl p-5 shadow-soft w-full sm:w-40 flex flex-col">
             <div className="flex items-center gap-2 mb-4">
               <img
                 src="https://i.pravatar.cc/60?img=45"

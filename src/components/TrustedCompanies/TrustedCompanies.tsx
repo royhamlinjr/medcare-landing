@@ -21,7 +21,7 @@ const TrustedCompanies = () => {
         {trustedCompanies.map((company) => (
           <div
             key={company.name}
-            className="flex items-center justify-center gap-2 border border-gray-100 rounded-xl py-5 px-4 hover:shadow-md hover:border-primary/30 transition-all duration-200"
+            className="flex items-center justify-center gap-2 border border-gray-100 rounded-xl py-5 px-4 hover:shadow-soft hover:border-primary/30 transition-all duration-200"
           >
             <span className="text-xl">{company.logo}</span>
             <span className="font-semibold text-dark">{company.name}</span>

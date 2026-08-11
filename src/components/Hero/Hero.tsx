@@ -59,7 +59,7 @@ const Hero = () => {
           />
 
           {/* Calling card overlay */}
-          <div className="absolute bottom-6 left-6 right-6 md:left-auto md:right-6 md:w-72 bg-white rounded-2xl shadow-lg p-4 flex items-center gap-3">
+          <div className="absolute bottom-6 left-6 right-6 md:left-auto md:right-6 md:w-72 bg-white rounded-2xl shadow-soft-lg p-4 flex items-center gap-3">
             <img
               src="https://i.pravatar.cc/100?img=51"
               alt="Dr. James Smith"

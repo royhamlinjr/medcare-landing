@@ -15,7 +15,7 @@ const Consultants = () => {
       {consultants.map((consultant) => (
       <article
         key={consultant.id}
-        className="border border-gray-100 rounded-2xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
+        className="border border-gray-100 rounded-2xl p-6 hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-200"
       >
         <div className="flex items-start justify-between mb-4">
           <img
@@ -78,7 +78,7 @@ const Consultants = () => {
             decoding="async"
           />
 
-          <div className="absolute top-4 left-4 right-4 sm:right-auto bg-white rounded-xl shadow-lg p-4 max-w-[220px]">
+          <div className="absolute top-4 left-4 right-4 sm:right-auto bg-white rounded-xl shadow-soft-lg p-4 max-w-[220px]">
             <div className="flex items-center gap-2 mb-2">
               <img
                 src="https://i.pravatar.cc/60?img=14"
