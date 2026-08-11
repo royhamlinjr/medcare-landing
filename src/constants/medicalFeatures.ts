@@ -1,8 +1,8 @@
 export const medicalFeatures: string[] = [
-  "Prescription & Health Management",
-  "Health & Wellness Programs",
+  "Personalized Health Assessment",
   "Integration with Wearable Devices",
-  "Lab & Health Analytics",
-  "Telemedicine & eConsultation",
+  "Emergency Contact Feature",
+  "Patient Education",
+  "24-hour Health Assistant",
   "Health Tracking",
 ];

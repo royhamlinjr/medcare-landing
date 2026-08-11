@@ -13,27 +13,39 @@ const Consultants = () => {
       {/* Consultant cards */}
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-14">
       {consultants.map((consultant) => (
-        <article
-          key={consultant.id}
-          className="border border-gray-100 rounded-2xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
-        >
+      <article
+        key={consultant.id}
+        className="border border-gray-100 rounded-2xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
+      >
+        <div className="flex items-start justify-between mb-4">
           <img
             src={consultant.avatar}
             alt={consultant.name}
-            className="w-14 h-14 rounded-full object-cover mb-4"
+            width={56}
+            height={56}
+            loading="lazy"
+            decoding="async"
+            className="w-14 h-14 rounded-full object-cover"
           />
-          <h3 className="text-lg font-bold text-dark">{consultant.name}</h3>
-          <p className="text-sm text-gray-text mb-3">{consultant.role}</p>
-          <div className="w-8 h-0.5 bg-primary mb-3" />
-          <p className="text-sm text-gray-text mb-6">{consultant.bio}</p>
           <button
-            aria-label={`View ${consultant.name}'s profile`}
-            className="w-10 h-10 rounded-full bg-primary hover:bg-primary-dark text-white flex items-center justify-center transition-colors"
+            aria-label={`More options for ${consultant.name}`}
+            className="w-8 h-8 rounded-full border border-gray-200 hover:bg-gray-50 transition-colors flex items-center justify-center text-gray-text text-sm"
           >
-            →
+            •••
           </button>
-        </article>
-      ))}
+        </div>
+        <h3 className="text-lg font-bold text-dark">{consultant.name}</h3>
+        <p className="text-sm text-gray-text mb-3">{consultant.role}</p>
+        <div className="w-8 h-0.5 bg-primary mb-3" />
+        <p className="text-sm text-gray-text mb-6">{consultant.bio}</p>
+        <button
+          aria-label={`View ${consultant.name}'s profile`}
+          className="w-10 h-10 rounded-full bg-primary hover:bg-primary-dark text-white flex items-center justify-center transition-colors"
+        >
+          →
+        </button>
+      </article>
+    ))}
         
       </div>
 
