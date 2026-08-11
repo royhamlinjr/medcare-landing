@@ -7,8 +7,8 @@ const Hero = () => {
       <div className="grid md:grid-cols-2 gap-8 items-stretch">
         {/* Left: Text content */}
         <div className="bg-gradient-to-br from-orange-100 via-pink-100 to-purple-200 rounded-3xl p-8 md:p-12 flex flex-col justify-center gap-6">
-          <span className="inline-flex w-fit items-center gap-2 bg-white/70 text-primary text-sm font-medium px-4 py-1.5 rounded-full">
-            <span className="bg-primary/10 text-primary px-2 py-0.5 rounded-full text-xs font-semibold">
+          <span className="inline-flex w-fit items-center gap-2 bg-white text-dark text-sm font-medium px-4 py-1.5 rounded-full shadow-soft">
+            <span className="text-primary font-semibold">
               New
             </span>
             Get flat 20% off on first check-up
@@ -48,7 +48,7 @@ const Hero = () => {
         </div>
 
         {/* Right: Doctor image */}
-        <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-purple-100 to-purple-200 min-h-[320px] md:min-h-[420px]">
+        <div className="relative rounded-3xl overflow-hidden bg-white border border-gray-100 min-h-[320px] md:min-h-[420px]">
           <img
             src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=500&auto=format&fit=crop&q=65"
             alt="Doctor ready for consultation"
