@@ -46,7 +46,7 @@ const Footer = () => {
               </div>
 
               <span className="font-bold text-lg">
-                Medcare
+                Medicare
               </span>
             </div>
 
