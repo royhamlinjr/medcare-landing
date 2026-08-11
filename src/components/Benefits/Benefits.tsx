@@ -98,21 +98,83 @@ const Benefits = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl p-5 shadow-sm">
-          <div className="flex items-center justify-between mb-4">
-            <p className="text-sm font-semibold text-dark">Appointment Overview</p>
-            <span className="text-xs text-gray-text border border-gray-200 rounded-full px-3 py-1">
-              This Month
-            </span>
+        <div className="grid sm:grid-cols-[1fr_auto] gap-4">
+          {/* Line chart card */}
+          <div className="bg-white rounded-2xl p-5 shadow-sm">
+            <div className="flex items-center justify-between mb-4">
+              <p className="text-sm font-semibold text-dark">Appointment Overview</p>
+              <span className="text-xs text-gray-text border border-gray-200 rounded-full px-3 py-1 flex items-center gap-1">
+                This Month <span className="text-[10px]">▾</span>
+              </span>
+            </div>
+
+            <div className="relative">
+              {/* Floating tooltip */}
+              <div className="absolute left-[38%] top-2 bg-primary text-white text-[11px] font-medium rounded-lg px-3 py-1.5 whitespace-nowrap shadow-md z-10">
+                45 Booked Appointments
+              </div>
+
+              <svg
+                viewBox="0 0 320 140"
+                className="w-full h-32"
+                preserveAspectRatio="none"
+              >
+                <polyline
+                  points="0,120 45,110 90,95 135,100 180,70 225,55 270,20 320,10"
+                  fill="none"
+                  stroke="var(--color-primary)"
+                  strokeWidth="2.5"
+                  strokeDasharray="4 4"
+                  strokeLinecap="round"
+                />
+                <circle cx="135" cy="100" r="5" fill="var(--color-primary)" />
+              </svg>
+
+              <div className="flex justify-between text-[10px] text-gray-text mt-1">
+                <span>Mon</span>
+                <span>Tue</span>
+                <span>Wed</span>
+                <span>Thu</span>
+                <span>Fri</span>
+                <span>Sat</span>
+                <span>Sun</span>
+              </div>
+            </div>
           </div>
-          <div className="flex items-end gap-2 h-24">
-            {[30, 45, 55, 40, 60, 75, 90].map((height, index) => (
-              <div
-                key={index}
-                className="flex-1 bg-primary/20 rounded-t-md hover:bg-primary/40 transition-colors"
-                style={{ height: `${height}%` }}
+
+          {/* Health score card */}
+          <div className="bg-white rounded-2xl p-5 shadow-sm w-full sm:w-40 flex flex-col">
+            <div className="flex items-center gap-2 mb-4">
+              <img
+                src="https://i.pravatar.cc/60?img=45"
+                alt="Maria"
+                width={32}
+                height={32}
+                loading="lazy"
+                decoding="async"
+                className="w-8 h-8 rounded-full object-cover"
               />
-            ))}
+              <div>
+                <p className="text-xs font-semibold text-dark">Maria</p>
+                <p className="text-[10px] text-gray-text">Health Score</p>
+              </div>
+            </div>
+
+            <p className="text-2xl font-extrabold text-dark leading-none mb-0.5">85</p>
+            <p className="text-[10px] text-green-500 font-medium mb-4">Excellent</p>
+
+            <div className="flex items-end gap-1 h-16 mt-auto">
+              {[40, 60, 35, 70, 50, 80, 45].map((height, index) => (
+                <div
+                  key={index}
+                  className="flex-1 bg-primary/20 hover:bg-primary/40 transition-colors rounded-t-sm"
+                  style={{ height: `${height}%` }}
+                />
+              ))}
+            </div>
+            <div className="flex justify-between text-[8px] text-gray-text mt-1">
+              <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+            </div>
           </div>
         </div>
       </div>
